@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center ;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.task-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+.btn-cancel {
+  background: #f44336;
+}
+
+.btn-cancel:hover {
+  background: #e53935;
+}
+
+.task-list{
+  display: grid;
+  grid-gap: 20px;
+}
+
+.task{
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task.completed {
+  border-left: 5px solid #4caf50;
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-content h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.status {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.date {
+  color: #888;
+  font-size: 14px;
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-edit {
+  background: #2196f3;
+}
+
+.btn-edit:hover {
+  background: #0b7dda;
+}
+
+.btn-delete {
+  background: #f44336;
+}
+
+.btn-delete:hover {
+  background: #d32f2f;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .task {
+    flex-direction: column;
+  }
+  
+  .task-actions {
+    flex-direction: row;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  .btn {
+    flex: 1;
+  }
+}
